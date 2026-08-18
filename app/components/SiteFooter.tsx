@@ -4,13 +4,10 @@ export default function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="site-footer__inner">
-        <div>
-          <div className="brand brand--footer">
-            <span className="brand__mark" aria-hidden="true" />
-            Skylabs
-          </div>
+        <div className="site-footer__brand">
+          <span className="wordmark">Skylabs</span>
           <p className="site-footer__tagline">
-            Skydiving experiences &amp; gear. Built in the clouds.
+            Skydiving &amp; gear. Own the sky.
           </p>
         </div>
         <nav className="site-footer__links" aria-label="Footer">
@@ -18,10 +15,10 @@ export default function SiteFooter() {
           <Link href="/shop">Shop</Link>
           <Link href="/cart">Cart</Link>
         </nav>
-        <p className="site-footer__fine">
-          © {new Date().getFullYear()} Skylabs · Demo site — no real bookings or
-          payments are processed.
-        </p>
+      </div>
+      <div className="site-footer__fine">
+        <span>© {new Date().getFullYear()} Skylabs</span>
+        <span>Demo site — no real bookings or payments are processed.</span>
       </div>
     </footer>
   );

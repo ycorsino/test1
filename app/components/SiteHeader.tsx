@@ -18,8 +18,7 @@ export default function SiteHeader() {
   return (
     <header className="site-header">
       <div className="site-header__inner">
-        <Link href="/" className="brand" aria-label="Skylabs home">
-          <span className="brand__mark" aria-hidden="true" />
+        <Link href="/" className="brand wordmark" aria-label="Skylabs home">
           Skylabs
         </Link>
 
@@ -58,8 +57,8 @@ export default function SiteHeader() {
           </label>
 
           <Link href="/cart" className="cart-link" aria-label="View cart">
-            <span aria-hidden="true">🛒</span>
-            {count > 0 && <span className="cart-link__count">{count}</span>}
+            Cart
+            <span className="cart-link__count">{count}</span>
           </Link>
         </div>
       </div>

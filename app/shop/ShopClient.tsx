@@ -51,19 +51,20 @@ export default function ShopClient({ products }: { products: Product[] }) {
             <div
               className="product-card__art"
               style={{
-                background: `radial-gradient(120px 120px at 30% 25%, ${product.accent}55, transparent 70%), linear-gradient(160deg, #0b1220, #060b16)`,
+                background: `radial-gradient(150px 150px at 72% 20%, ${product.accent}22, transparent 70%), linear-gradient(160deg, #efece4, #e2ddd1)`,
               }}
             >
               {product.badge && (
                 <span className="product-card__badge">{product.badge}</span>
               )}
-              <span
-                className="product-card__glyph"
-                style={{ color: product.accent }}
-                aria-hidden="true"
-              >
+              <span className="product-card__glyph" aria-hidden="true">
                 {glyphFor(product.category)}
               </span>
+              <span
+                className="product-card__accent"
+                style={{ background: product.accent }}
+                aria-hidden="true"
+              />
             </div>
             <div className="product-card__body">
               <span className="chip chip--sm">{product.category}</span>
